@@ -40,17 +40,14 @@ header nav.menu-mobile {
 }
 
 header nav.menu-mobile ul {
-    z-index: 999;
+    z-index: 1;
+    display: none;
     width: 100%;
     text-align: center;
     position: absolute;
     left: 0;
     top: 60px;
-    background-color: white;
-}
-
-header nav.menu-mobile ul li {
-    padding: 10px 0;
+    background-color: rgba(255,255,255,0.7);
 }
 
 header nav.menu-desktop {
@@ -71,7 +68,7 @@ header nav.menu-desktop ul li {
 header nav.menu-desktop ul li a {
     font-size: 14px;
     text-decoration: none;
-    color: #b4b4b4;
+    color: #a09c9c;
     transition: ease-out 250ms;
 }
 
@@ -80,9 +77,11 @@ header nav.menu-mobile ul li {
 }
 
 header nav.menu-mobile ul li a {
+    display: block;
+    padding: 10px 0;
     font-size: 16px;
     text-decoration: none;
-    color: #b4b4b4;
+    color: #a09c9c;
     transition: ease-out 250ms;
 }
 
@@ -210,7 +209,7 @@ section.profile-container .profile-text h2 {
 }
 
 section.profile-container .profile-text p {
-    color: #b4b4b4;
+    color: #a09c9c;
     font-size: 14px;
     margin-top: 12px;
 }
@@ -267,7 +266,7 @@ section.treatment .treatment-single h2 {
 section.treatment .treatment-single p {
     padding: 10px 0;
     font-size: 13px;
-    color: #b4b4b4;
+    color: #a09c9c;
 }
 
 section.statement h2 {
@@ -289,7 +288,7 @@ section.statement .statement-single {
 
 section.statement .statement-single quote {
     font-size: 15px;
-    color: #b4b4b4;
+    color: #a09c9c;
 }
 
 section.statement .statement-single .statement-name {
@@ -306,7 +305,7 @@ section.statement .statement-single .statement-name span {
     position: relative;
     top: 6px;
     font-size: 13px;
-    color: #b4b4b4;
+    color: #a09c9c;
     display: inline-block;
     vertical-align: top;
 }
@@ -377,19 +376,19 @@ section.contact > h2 {
 
 section.contact form {
     width: 100%;
-    margin: 30px auto;
+    margin: 10px auto;
     max-width: 500px;
 }
 
 section.contact .form-wraper {
     float: left;
-    padding: 0 10px;
-    margin-top: 10px;
+    padding: 0 5px;
+    margin-top: 8px;
 }
 
 section.contact .form-wraper span {
     font-size: 15px;
-    color: #b4b4b4;
+    color: #a09c9c;
 }
 
 section.contact .form-wraper input[type=text] {
@@ -398,13 +397,13 @@ section.contact .form-wraper input[type=text] {
     line-height: 35px;
     padding-left: 9px;
     border: 1px solid #dadada;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 section.contact .form-wraper textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     height: 121px;
     resize: none;
     border: 1px solid #dadada;
@@ -464,7 +463,7 @@ footer.footer-two .credits {
     float: left;
     width: 100%;
     text-align: center;
-    padding: 40px 0;
+    padding: 15px 0;
     background-color: #576975;
 }
 
@@ -486,7 +485,7 @@ footer.footer-two .credits p {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:880px) {
 
     /*  header .logo {
         display: flex;
