@@ -14,24 +14,14 @@ $(function() {
         });
     }
 
-    desktopScroll();
+    scrollPage(); 
 
-    function desktopScroll() {
-        $('#contact').click(function() {
-            $('html, body').animate({
-                scrollTop: $(document).height()
-            }, 1000);
-            return false;
-        });
-    }
-
-    mobileScroll();
-
-    function mobileScroll() {
-        $('#mobile-contact').click(function() {
-            $('html, body').animate({
-                scrollTop: $(document).height()
-            }, 1000);
+    function scrollPage() {
+        $('nav a').click(function(){
+            var href = $(this).attr('href');
+            var offSetTop = $(href).offset().top;
+    
+            $('html, body').animate({'scrollTop':offSetTop});
             return false;
         });
     }
