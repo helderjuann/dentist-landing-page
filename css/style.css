@@ -36,7 +36,6 @@ header nav.menu-mobile {
     cursor: pointer;
     background-image: url(../assets/menu-mobile.png);
     background-size: 100% 100%;
-    float: right;
 }
 
 header nav.menu-mobile ul {
